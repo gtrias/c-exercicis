@@ -1,0 +1,10 @@
+#include <iostream.h>
+#include <conio.h>
+main (){
+  int parada;
+  gotoxy (50,50);
+
+  cout << " prueba";
+
+  cin >> parada;
+}
