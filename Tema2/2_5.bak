@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <time.h>
+#include <conio.h>
+#include <stdlib.h>
+void main(){
+	float dado[5];
+   int i,cara;
+   dado[0]=0;
+   dado[1]=0;
+   dado[2]=0;
+   dado[3]=0;
+   dado[4]=0;
+   dado[5]=0;
+	randomize();
+   for (i=1; i<=1000; i++){
+   	cara = random(6);
+      dado[cara]++;
+
+   }
+   printf ("\nLa frecuencia relativa que ha salido el uno es: %d", dado[0]);
+   printf ("\nLa frecuencia relativa que ha salido el dos es: %d", dado[1]);
+   printf ("\nLa frecuencia relativa que ha salido el tres es: %d",dado[2]);
+   printf ("\nLa frecuencia relativa que ha salido el cuatro es: %d",dado[3]);
+   printf ("\nLa frecuencia relativa que ha salido el cinco es: %d",dado[4]);
+   printf ("\nLa frecuencia relativa que ha salido el seis es: %d",dado[5]/1000);
+   scanf("%d",i);
+}

@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+int resultado();
+
+main(){
+
+	int i,res;
+   randomize();
+	for (i=1; i<16; i++){
+
+		res = resultado();
+
+		if (res == 1){
+   		printf("\nEl resultado del partido %d es: 1",i);
+   	}
+   	if (res == 0){
+    		printf("\nEl resultado del partido %d es: X",i);
+   	}
+   	if (res == 2){
+    		printf("\nEl resultado del partido %d es: 2",i);
+   	}
+
+	}
+	getch();
+
+}
+
+int resultado(){
+	int rand;
+
+   rand = random(10);
+   if (rand < 5){
+   	// EL RESULTADO DE LA QUINIELA ES 1 (50%)
+   	return(1);
+   }else{
+      if (rand < 8){
+      // EL RESULTADO DE LA QUINIELA ES X (30%)
+      	return(0);
+      }else{
+      // EL RESULTADO DE LA QUINIELA ES 2 (20%)
+      	return(2);
+      }
+   }
+
+}

@@ -1,0 +1,15 @@
+#include <iostream.h>
+main(){
+  int numero;
+  cout << "Introduzca el numero a comprobar: ";
+  cin >> numero;
+  if (numero%2 == 0){
+    cout << "\n El numero es par";
+  }else{
+    cout << "\n El numero es impar";
+  }
+  cin >> numero;
+  return(0);
+
+
+}
